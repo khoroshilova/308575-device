@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Device</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
       <nav>
-        <a class="header-logo-name" href="#">Device</a>
+        <a class="header-logo-name" href="#"><img src="img/logo-black.png" width="162" height="36" alt="Device"></a>
         <form class="search" action="https://echo.htmlacademy.ru" method="get">
           <input type="search" name="search" placeholder="Поиск по сайту">
           <button class="search-btn" type="submit">Найти</button>
@@ -37,12 +38,16 @@
               <li>
                 <a href="#">Экшн-камеры</a>
               </li>
+            </ul>
+            <ul class="header-menu-catalog">
               <li>
                 <a href="#">Фитнес-браслеты</a>
               </li>
               <li>
                 <a href="#">Умные часы</a>
               </li>
+            </ul>
+            <ul class="header-menu-catalog">
               <li>
                 <a href="#">Квадрокоптеры</a>
               </li>
@@ -62,7 +67,7 @@
     </header>
 
     <main>
-      <h1 class="shop-title">Интернет-магазин электроники и гаджетов Device</h1>
+      <h1 class="visibility-hidden">Интернет-магазин электроники и гаджетов Device</h1>
       <section class="slider">
         <input type="radio" id="btn-1" name="toggle" checked>
         <input type="radio" id="btn-2" name="toggle">
@@ -78,6 +83,7 @@
         <div class="slider-slides">
           <div class="slider-slide">
             <h2 class="slider-title">Делай селфи, как Бен Стиллер!</h2>
+            <span class="slider-number">01</span>
             <p class="slider-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
             <a class="slider-btn" href="catalog.html">Подробнее</a>
             <table class="slider-table">
@@ -101,6 +107,7 @@
           </div>
           <div class="slider-slide">
             <h2 class="slider-title">Худеем правильно!</h2>
+            <span class="slider-number">02</span>
             <p class="slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
             <a class="slider-btn" href="catalog.html">Подробнее</a>
             <table class="slider-table">
@@ -116,6 +123,7 @@
           </div>
           <div class="slider-slide">
             <h2 class="slider-title">Порхает как бабочка, жалит как пчела!</h2>
+            <span class="slider-number">03</span>
             <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
             <a class="slider-btn" href="catalog.html">Подробнее</a>
             <table class="slider-table">
@@ -136,7 +144,7 @@
         </div>
       </section>
       <section class="main-menu">
-        <h2 class="section-title">Каталог товаров</h2>
+        <h2 class="visibility-hidden">Каталог товаров</h2>
         <ul class="main-menu-catalog">
           <li>
             <a href="#">Виртуальная реальность</a>
@@ -159,7 +167,7 @@
         </ul>
       </section>
       <section class="services">
-        <h2 class="section-title">Услуги нашего магазина</h2>
+        <h2 class="visibility-hidden">Услуги нашего магазина</h2>
         <div class="service-slider">
           <input type="radio" id="shipping" name="toggle1" checked>
           <input type="radio" id="guarantee" name="toggle1">
@@ -192,24 +200,24 @@
         </div>
       </section>
       <section class="popular-brends">
-        <h2 class="section-title">Популярные бренды</h2>
+        <h2 class="visibility-hidden">Популярные бренды</h2>
         <ul>
           <li>
-            <a href="#">Djl</a>
+            <a href="#"><img src="img/brend-djl.jpg" width="260" height="100" alt="Djl"></a>
           </li>
           <li>
-            <a href="#">SP Gadgets</a>
+            <a href="#"><img src="img/brend-sp_gadgets.jpg" width="260" height="100" alt="SP Gagets"></a>
           </li>
           <li>
-            <a href="#">GoPro</a>
+            <a href="#"><img src="img/brend-go_pro.jpg" width="260" height="100" alt="Go Pro"></a>
           </li>
           <li>
-            <a href="#">Vive</a>
+            <a href="#"><img src="img/brend-vive.jpg" width="260" height="100" alt="Vive"></a>
           </li>
         </ul>
       </section>
       <section class="block-info">
-        <h2 class="section-title">Наша компания</h2>
+        <h2 class="visibility-hidden">Наша компания</h2>
         <section class="company">
           <h2 class="company-title">О нас</h2>
           <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -231,7 +239,7 @@
     </main>
     <footer class="main-footer">
       <div class="footer-top">
-        <a class="footer-logo-name" href="#">Device</a>
+        <a class="footer-logo-name" href="#"><img src="img/logo-yellow.png" width="162" height="35" alt="Device"></a>
         <ul class="footer-user-navigation">
           <li>
             <a class="footer-user-navigation" href="#">Вход</a>
@@ -261,7 +269,7 @@
       </div>
       <div class="footer-bottom">
         <section class="footer-social">
-          <h2>Мы в социальных сетях</h2>
+          <h2 class="visibility-hidden">Мы в социальных сетях</h2>
           <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
           <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
@@ -270,7 +278,7 @@
       </div>
     </footer>
     <section class="modal-content-write-us">
-      <h2 class="section-title">Обратная связь</h2>
+      <h2 class="visibility-hidden">Обратная связь</h2>
       <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
       <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="write-us-form-user">
@@ -289,7 +297,7 @@
       </form>
     </section>
     <section class="modal-content-map">
-      <h2 class="section-title">Как до нас добраться</h2>
+      <h2 class="visibility-hidden">Как до нас добраться</h2>
       <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
     </section>
   </body>
