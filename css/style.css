@@ -1,0 +1,42 @@
+/*
+#f0c52e yellow
+#272525 black
+*/
+@font-face {
+  font-family: "Gilroy";
+  src: url("https://fonts.fontstorage.com/import/gilroy.css");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("http://fonts.fontstorage.com/import/opensans.css";);
+}
+
+body {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: bolder;
+  font-size: 18px;
+  line-height: normal;
+  color: #000000;
+}
+
+.visibility-hidden {
+  visibility: hidden;
+}
+
+.slider-title,
+.service-slider-title,
+.company-title,
+.contacts-title {
+  font-size: 47px;
+}
+
+.slider-text,
+.service-slider-text {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+  font-kerning: normal;
+  color: #464646;
+}
