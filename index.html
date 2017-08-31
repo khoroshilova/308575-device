@@ -7,27 +7,30 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header container">
+      <a class="header-logo-name" href="#">DEVICE</a>
       <nav class="main-navigation">
-        <a class="header-logo-name" href="#">DEVICE</a>
-        <form class="search" action="https://echo.htmlacademy.ru" method="get">
-          <label class="visually-hidden" for="search">Поиск по сайту</label>
-          <input id="search" type="search" name="search" placeholder="Поиск по сайту">
-          <button class="search-btn" type="submit">Найти</button>
-        </form>
-        <ul class="header-user">
-          <li>
-            <a class="header-user-navigation" href="#">Войти</a>
-          </li>
-          <li>
-            <a class="header-user-navigation" href="#">Сравнить</a>
-          </li>
-          <li>
-            <a class="header-user-navigation" href="#">Корзина</a>
-          </li>
-        </ul>
+        <div class="main-navigation-wrapper">
+          <form class="search" action="https://echo.htmlacademy.ru" method="get">
+            <label class="visually-hidden" for="search">Поиск по сайту</label>
+            <input id="search" type="search" name="search" placeholder="Поиск по сайту">
+            <button class="search-btn" type="submit">Найти</button>
+          </form>
+          <ul class="header-user header-user-wrapper">
+            <li class="header-user-login">
+              <a class="header-user-navigation" href="#">Войти</a>
+              <a class="header-user-navigation exit" href="#"></a>
+            </li>
+            <li class="header-user-compare">
+              <a class="header-user-navigation" href="#">Сравнить</a>
+            </li>
+            <li class="header-user-cart">
+              <a class="header-user-navigation" href="#">Корзина</a>
+            </li>
+          </ul>
+        </div>
         <ul class="header-menu">
-          <li>
+          <li class="header-menu-list">
             <a class="header-menu-item" href="#">Каталог товаров</a>
             <ul class="header-menu-catalog">
               <li>
@@ -54,13 +57,13 @@
               </li>
             </ul>
           </li>
-          <li>
+          <li class="header-menu-list">
             <a class="header-menu-item" href="#">Доставка</a>
           </li>
-          <li>
+          <li class="header-menu-list">
             <a class="header-menu-item" href="#">Гарантия</a>
           </li>
-          <li>
+          <li class="header-menu-list">
             <a class="header-menu-item" href="#">Контакты</a>
           </li>
         </ul>
@@ -69,7 +72,7 @@
 
     <main>
       <h1 class="visually-hidden">Интернет-магазин электроники и гаджетов Device</h1>
-      <section class="slider">
+      <section class="slider container">
         <input type="radio" id="btn-1" name="toggle" checked>
         <input type="radio" id="btn-2" name="toggle">
         <input type="radio" id="btn-3" name="toggle">
@@ -144,7 +147,7 @@
           </div>
         </div>
       </section>
-      <section class="main-menu">
+      <section class="main-menu container">
         <h2 class="visually-hidden">Каталог товаров</h2>
         <ul class="main-menu-catalog">
           <li>
@@ -174,41 +177,43 @@
         </ul>
       </section>
       <section class="services">
-        <h2 class="visually-hidden">Услуги нашего магазина</h2>
-        <div class="service-slider">
-          <input type="radio" id="shipping" name="toggle1" checked>
-          <input type="radio" id="guarantee" name="toggle1">
-          <input type="radio" id="credit" name="toggle1">
-          <div class="service-slider-controls">
-            <label for="shipping">Доставка</label>
-            <label for="guarantee">Гарантия</label>
-            <label for="credit">Кредит</label>
-          </div>
-          <div class="service-slider-slides">
-            <div class="service-slider-slide">
-              <h2 class="service-slider-title">Доставка</h2>
-              <p class="service-slider-text">
-                Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!
-              </p>
+        <div class="container">
+          <h2 class="visually-hidden">Услуги нашего магазина</h2>
+          <div class="service-slider">
+            <input type="radio" id="shipping" name="toggle1" checked>
+            <input type="radio" id="guarantee" name="toggle1">
+            <input type="radio" id="credit" name="toggle1">
+            <div class="service-slider-controls">
+              <label for="shipping">Доставка</label>
+              <label for="guarantee">Гарантия</label>
+              <label for="credit">Кредит</label>
             </div>
-            <div class="service-slider-slide">
-              <h2 class="service-slider-title">Гарантия</h2>
-              <p class="service-slider-text">
-                Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
-              </p>
-            </div>
-            <div class="service-slider-slide">
-              <h2 class="service-slider-title">Кредит</h2>
-              <p class="service-slider-text">
-                Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
-              </p>
+            <div class="service-slider-slides">
+              <div class="service-slider-slide">
+                <h2 class="service-slider-title">Доставка</h2>
+                <p class="service-slider-text">
+                  Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!
+                </p>
+              </div>
+              <div class="service-slider-slide">
+                <h2 class="service-slider-title">Гарантия</h2>
+                <p class="service-slider-text">
+                  Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
+                </p>
+              </div>
+              <div class="service-slider-slide">
+                <h2 class="service-slider-title">Кредит</h2>
+                <p class="service-slider-text">
+                  Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="popular-brends">
+      <section class="popular-brends container">
         <h2 class="visually-hidden">Популярные бренды</h2>
-        <ul>
+        <ul class="popular-brends-list">
           <li>
             <a class="popular-brends-logo" href="#"><img src="img/brend-1.jpg" width="260" height="100" alt="Dji"></a>
           </li>
@@ -223,7 +228,7 @@
           </li>
         </ul>
       </section>
-      <section class="block-info">
+      <section class="block-info container">
         <h2 class="visually-hidden">Наша компания</h2>
         <section class="company">
           <h2 class="company-title">О нас</h2>
@@ -247,43 +252,48 @@
       </section>
     </main>
     <footer class="main-footer">
-      <div class="footer-top">
-        <a class="footer-logo-name" href="#">DEVICE</a>
-        <ul class="footer-user">
-          <li>
-            <a class="footer-user-navigation" href="#">Вход</a>
-          </li>
-          <li>
-            <a class="footer-user-navigation" href="#">Сравнить</a>
-          </li>
-          <li>
-            <a class="footer-user-navigation" href="#">Корзина</a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer-middle">
-        <p>г. Москва, ул. Строителей, 15</p>
-        <ul class="footer-menu">
-          <li>
-            <a class="footer-menu-item" href="#">Доставка</a>
-          </li>
-          <li>
-            <a class="footer-menu-item" href="#">Гарантия</a>
-          </li>
-          <li>
-            <a class="footer-menu-item" href="#">Контакты</a>
-          </li>
-        </ul>
-        <p>Тел.: +7 (495) 495-95-95</p>
-      </div>
-      <div class="footer-bottom">
-        <section class="footer-social">
-          <h2 class="visually-hidden">Мы в социальных сетях</h2>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-          <a class="social-btn social-btn-tw" href="#">Твиттер</a>
-        </section>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">html academy</a>
+      <div class="container">
+        <div class="footer-top">
+          <a class="footer-logo-name" href="#">DEVICE</a>
+          <ul class="footer-user">
+            <li>
+              <a class="footer-user-navigation" href="#">Вход</a>
+            </li>
+            <li>
+              <a class="footer-user-navigation" href="#">Сравнить</a>
+            </li>
+            <li>
+              <a class="footer-user-navigation" href="#">Корзина</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-middle">
+          <p>г. Москва, ул. Строителей, 15</p>
+          <ul class="footer-menu">
+            <li>
+              <a class="footer-menu-item" href="#">Доставка</a>
+            </li>
+            <li>
+              <a class="footer-menu-item" href="#">Гарантия</a>
+            </li>
+            <li>
+              <a class="footer-menu-item" href="#">Контакты</a>
+            </li>
+          </ul>
+          <p>Тел.: +7 (495) 495-95-95</p>
+        </div>
+        <div class="footer-bottom">
+          <div class="yellow-line"></div>
+          <section class="footer-social-block">
+            <h2 class="visually-hidden">Мы в социальных сетях</h2>
+            <div class="footer-social">
+              <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+              <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+              <a class="social-btn social-btn-tw" href="#">Твиттер</a>
+            </div>
+          </section>
+          <a href="https://htmlacademy.ru/intensive/htmlcss">html academy</a>
+        </div>
       </div>
     </footer>
     <section class="modal-content-write-us">

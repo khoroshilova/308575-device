@@ -7,37 +7,37 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header container">
+      <a class="header-logo-name" href="index.html">DEVICE</a>
       <nav class="main-navigation">
-        <a class="header-logo-name" href="index.html">DEVICE</a>
-        <form class="search" action="https://echo.htmlacademy.ru" method="get">
-          <label class="visually-hidden" for="search">Поиск по сайту</label>
-          <input id="search" type="search" name="search" placeholder="Поиск по сайту">
-          <button class="search-btn" type="submit">Найти</button>
-        </form>
-        <ul class="header-user">
-          <li>
-            <a class="header-user-navigation" href="#">Валентин Петухов</a>
-          </li>
-          <li>
-            <a class="header-user-navigation exit" href="#">Выйти</a>
-          </li>
-          <li>
-            <a class="header-user-navigation" href="#">Сравнить</a>
-          </li>
-          <li>
-            <a class="header-user-navigation" href="#">Корзина</a>
-          </li>
-        </ul>
+        <div class="main-navigation-wrapper">
+          <form class="search" action="https://echo.htmlacademy.ru" method="get">
+            <label class="visually-hidden" for="search">Поиск по сайту</label>
+            <input id="search" type="search" name="search" placeholder="Поиск по сайту">
+            <button class="search-btn" type="submit">Найти</button>
+          </form>
+          <ul class="header-user header-user-wrapper">
+            <li class="header-user-login">
+              <a class="header-user-navigation" href="#">Валентин Петухов</a>
+              <a class="header-user-navigation exit" href="#">Выйти</a>
+            </li>
+            <li class="header-user-compare">
+              <a class="header-user-navigation" href="#">Сравнить</a>
+            </li>
+            <li class="header-user-cart">
+              <a class="header-user-navigation" href="#">Корзина</a>
+            </li>
+          </ul>
+        </div>
         <ul class="header-menu">
-          <li>
+          <li class="header-menu-list">
             <a class="header-menu-item" href="#">Каталог товаров</a>
             <ul class="header-menu-catalog">
               <li>
                 <a class="header-menu-catalog-item" href="#">Виртуальная реальность</a>
               </li>
               <li>
-                <a class="header-menu-catalog-item" href="#">Моноподы для селфи</a>
+                <a class="header-menu-catalog-item" href="catalog.html">Моноподы для селфи</a>
               </li>
               <li>
                 <a class="header-menu-catalog-item" href="#">Экшн-камеры</a>
@@ -57,20 +57,21 @@
               </li>
             </ul>
           </li>
-          <li>
+          <li class="header-menu-list">
             <a class="header-menu-item" href="#">Доставка</a>
           </li>
-          <li>
+          <li class="header-menu-list">
             <a class="header-menu-item" href="#">Гарантия</a>
           </li>
-          <li>
+          <li class="header-menu-list">
             <a class="header-menu-item" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <main class="main-catalog">
+    <main class="main-catalog container">
+
       <h1 class="category-title">Моноподы для селфи</h1>
       <ul class="breadcrumbs">
         <li>
@@ -83,6 +84,7 @@
           <a class="breadcrumbs-btn">Моноподы для селфи</a>
         </li>
       </ul>
+
       <div class="catalog">
         <aside class="filter">
           <h2 class="filter-title">Фильтр:</h2>
@@ -180,55 +182,61 @@
               <h3 class="item-title">Селфи-палка «Следуй за мной</h3>
               <p class="item-price">4900 руб.</p>
             </article>
+            <div class="pagination">
+              <a class="btn-pagination btn-pagination-prev" href="#">Назад</a>
+              <a class="btn-pagination btn-pagination-number current">1</a>
+              <a class="btn-pagination btn-pagination-number" href="#">2</a>
+              <a class="btn-pagination btn-pagination-number" href="#">3</a>
+              <a class="btn-pagination btn-pagination-next" href="#">Вперед</a>
+            </div>
           </section>
-          <div class="pagination">
-            <a class="btn-pagination btn-pagination-prev" href="#">Назад</a>
-            <a class="btn-pagination btn-pagination-number current">1</a>
-            <a class="btn-pagination btn-pagination-number" href="#">2</a>
-            <a class="btn-pagination btn-pagination-number" href="#">3</a>
-            <a class="btn-pagination btn-pagination-next" href="#">Вперед</a>
-          </div>
+
         </div>
       </div>
     </main>
     <footer class="main-footer">
-      <div class="footer-top">
-        <a class="footer-logo-name" href="index.html">DEVICE</a>
-        <ul class="footer-user">
-          <li>
-            <a class="footer-user-navigation" href="#">Выйти</a>
-          </li>
-          <li>
-            <a class="footer-user-navigation" href="#">Сравнить</a>
-          </li>
-          <li>
-            <a class="footer-user-navigation" href="#">Корзина</a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer-middle">
-        <p>г. Москва, ул. Строителей, 15</p>
-        <ul class="footer-menu">
-          <li>
-            <a class="footer-menu-item" href="#">Доставка</a>
-          </li>
-          <li>
-            <a class="footer-menu-item" href="#">Гарантия</a>
-          </li>
-          <li>
-            <a class="footer-menu-item" href="#">Контакты</a>
-          </li>
-        </ul>
-        <p>Тел.: +7 (495) 495-95-95</p>
-      </div>
-      <div class="footer-bottom">
-        <section class="footer-social">
-          <h2 class="visually-hidden">Мы в социальных сетях</h2>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-          <a class="social-btn social-btn-tw" href="#">Твиттер</a>
-        </section>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">html academy</a>
+      <div class="container">
+        <div class="footer-top">
+          <a class="footer-logo-name" href="index.html">DEVICE</a>
+          <ul class="footer-user">
+            <li>
+              <a class="footer-user-navigation" href="#">Выйти</a>
+            </li>
+            <li>
+              <a class="footer-user-navigation" href="#">Сравнить</a>
+            </li>
+            <li>
+              <a class="footer-user-navigation" href="#">Корзина</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-middle">
+          <p>г. Москва, ул. Строителей, 15</p>
+          <ul class="footer-menu">
+            <li>
+              <a class="footer-menu-item" href="#">Доставка</a>
+            </li>
+            <li>
+              <a class="footer-menu-item" href="#">Гарантия</a>
+            </li>
+            <li>
+              <a class="footer-menu-item" href="#">Контакты</a>
+            </li>
+          </ul>
+          <p>Тел.: +7 (495) 495-95-95</p>
+        </div>
+        <div class="footer-bottom">
+          <div class="yellow-line"></div>
+          <section class="footer-social-block">
+            <h2 class="visually-hidden">Мы в социальных сетях</h2>
+            <div class="footer-social">
+              <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+              <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+              <a class="social-btn social-btn-tw" href="#">Твиттер</a>
+            </div>
+          </section>
+          <a href="https://htmlacademy.ru/intensive/htmlcss">html academy</a>
+        </div>
       </div>
     </footer>
   </body>
