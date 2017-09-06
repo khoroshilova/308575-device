@@ -998,6 +998,10 @@ img {
   opacity: 0.3;
 }
 
+.contacts img {
+  cursor: pointer;
+}
+
 .block-info-btn {
   display: inline-block;
   vertical-align: top;
@@ -1548,7 +1552,8 @@ img {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.sorting-btn:active {
+.sorting-btn:active,
+.sorting-btn-active {
   color: #000000;
 }
 
@@ -1782,6 +1787,82 @@ img {
 }
 
 /* Модальные окна */
+@-webkit-keyframes crawl {
+  0%   {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  25% {
+    -webkit-transform: translate(-55%, -50%);
+            transform: translate(-55%, -50%);
+  }
+  50%  {
+    -webkit-transform: translate(-45%, -50%);
+            transform: translate(-45%, -50%);
+  }
+  75%  {
+    -webkit-transform: translate(-55%, -50%);
+            transform: translate(-55%, -50%);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes crawl {
+  0%   {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  25% {
+    -webkit-transform: translate(-55%, -50%);
+            transform: translate(-55%, -50%);
+  }
+  50%  {
+    -webkit-transform: translate(-45%, -50%);
+            transform: translate(-45%, -50%);
+  }
+  75%  {
+    -webkit-transform: translate(-55%, -50%);
+            transform: translate(-55%, -50%);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+@-webkit-keyframes shake {
+  0%, 100% {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translate(-50%, -52%);
+            transform: translate(-50%, -52%);
+  }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translate(-50%, -48%);
+            transform: translate(-50%, -48%);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translate(-50%, -52%);
+            transform: translate(-50%, -52%);
+  }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translate(-50%, -48%);
+            transform: translate(-50%, -48%);
+  }
+}
+
 .modal-content-write-us {
   position: fixed;
   display: none;
@@ -1874,13 +1955,18 @@ img {
   background-color: #eaeaea;
 }
 
+.write-us-form-user input:invalid {
+  background-color: #f6dada;
+}
+
 .write-us-form-user input:focus,
 .write-us-form-user textarea:focus {
   background-color: #ffffff;
   outline: 2px solid #f0c52e;
 }
 
-.write-us-form input[type="text"]::-webkit-input-placeholder {
+.write-us-form input[type="text"]::-webkit-input-placeholder,
+.write-us-form input[type="email"]::-webkit-input-placeholder {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -1889,7 +1975,8 @@ img {
   color: rgba(70, 70, 70, 0.4);
 }
 
-.write-us-form input[type="text"]::-moz-placeholder {
+.write-us-form input[type="text"]::-moz-placeholder,
+.write-us-form input[type="email"]::-moz-placeholder {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -1898,7 +1985,8 @@ img {
   color: rgba(70, 70, 70, 0.4);
 }
 
-.write-us-form input[type="text"]:-moz-placeholder {
+.write-us-form input[type="text"]:-moz-placeholder,
+.write-us-form input[type="email"]:-moz-placeholder {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -1907,7 +1995,8 @@ img {
   color: rgba(70, 70, 70, 0.4);
 }
 
-.write-us-form input[type="text"]:-ms-input-placeholder {
+.write-us-form input[type="text"]:-ms-input-placeholder,
+.write-us-form input[type="email"]:-ms-input-placeholder {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -1988,4 +2077,13 @@ img {
   background-image: url("../img/map-big.png");
   transform: translate(-50%, -50%);
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.modal-content-show {
+  display: block;
+  animation: crawl 0.8s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
